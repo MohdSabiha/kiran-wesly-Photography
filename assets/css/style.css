@@ -471,18 +471,19 @@ body.active { overflow: hidden; }
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
-#home{
-  /* background-image: url('/kwbg.jpg'); */
-   /* background-image: url('/kwlogo.jpg'); */
-  /* background-color: rgb(2, 2, 2); */
 
-}
 .hero {
   padding-block-start: 120px;
   text-align: center;
+  margin-top: 19px;
+  height: fit-content;
+}
+#home{
+  background-image: url("/bg-img.jpg");
+  background-size: 100% 100%;
+  object-fit: contain;
 
 }
-
 .hero-banner {
   max-width: 150px;
 
@@ -967,14 +968,16 @@ body.active { overflow: hidden; }
   /**
    * CUSTOM PROPERTY
    */
+   header{
 
+   }
   :root {
 
     /**
      * spacing
      */
 
-    --section-padding: 80px;
+    --section-padding: 70px;
 
   }
 
@@ -1454,8 +1457,7 @@ body.active { overflow: hidden; }
 
   /**
    * CUSTOM PROPERTY
-   */
-
+  
   :root {
 
     /**
@@ -1612,6 +1614,14 @@ body.active { overflow: hidden; }
    * FOOTER
    */
 
+   #footer{
+    
+   /* background-size: 100% 100%;
+   
+   background-position:bottom 50%;
+    background-image: 
+    url("/kwlogo.jpg"); */
+   }
   .footer-top { padding-block: 300px; }
 
   .footer-top .section-title {
@@ -1733,3 +1743,34 @@ body.active { overflow: hidden; }
   .footer-top .container { max-width: 1200px; }
 
 }
+@media (min-width: 350px) {
+  #home{
+    background-image: url("/bg-img.jpg");
+    height: 50px;
+    width: 290px;
+  
+    /* background-size: 100% 100%; */
+    object-fit: contain;
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+  .footerhas-before{
+    height: 160px;
+    width: 300px;
+    /* margin-bottom: 50px; */
+  }
+}
+@media (min-width: 1024px) {
+  #home{
+    background-image: url("/bg-img.jpg");
+    
+    object-fit: contain;
+    width: 1020px;
+    margin-top: 70px;
+  }
+  .footerhas-before{
+    height: 500px;
+    width: 1030px;
+    /* margin-bottom: 50px; */
+  }
+} 
